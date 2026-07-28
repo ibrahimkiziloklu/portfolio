@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Fish Detection and Tracking System | Ibrahim Doruk Kızıloklu</title>
+    <meta name="description" content="AI-based vision system for autonomous underwater vehicles that detects, classifies and tracks fish species in real time, built at Cyprus Robotics with Orca - Caretta Robotics.">
+    <link rel="canonical" href="https://ibrahimkiziloklu.github.io/underwater-fish-detection.html">
+    <meta property="og:title" content="Underwater Fish Detection and Tracking System">
+    <meta property="og:description" content="AI-based vision system for autonomous underwater vehicles that detects, classifies and tracks fish species in real time.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ibrahimkiziloklu.github.io/underwater-fish-detection.html">
+    <meta property="og:image" content="https://ibrahimkiziloklu.github.io/images/projects/caretta_project/caretta.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src https://www.youtube-nocookie.com; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#1f3a5f">
+    <link rel="stylesheet" href="css/portfolio-styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <div class="logo"><a href="index.html">IK</a></div>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                </button>
+                <ul class="nav-links" id="primary-nav">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#publications">Publications</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+    <!-- Project Header -->
+    <section class="project-header blue">
+        <div class="container">
+            <h1>Underwater Fish Detection and Tracking System</h1>
+            <p>AI-based vision system for underwater vehicles</p>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section>
+        <div class="container">
+            <div class="project-content">
+                <img src="images/projects/caretta_project/caretta.jpg" alt="Caretta autonomous underwater vehicle carrying the fish detection system" class="project-image"
+                     width="2048" height="1153" fetchpriority="high" decoding="async">
+                
+                <div class="project-detail">
+                    <h3>Project Overview</h3>
+                    <p>While working at Cyprus Robotics in collaboration with Orca - Caretta Robotics, I helped to develop an AI-based vision system for autonomous underwater vehicles. This system was designed to detect, classify, and track various fish species in real-time, even in challenging underwater environments with limited visibility.</p>
+                    
+                    <p>The development of this system involved implementing deep learning models based on CNN architecture specifically optimized for underwater environments. The system overcomes common challenges in underwater vision such as light scattering, color distortion, and particulate matter, providing reliable detection in various marine conditions.</p>
+                    
+                    <div class="video-section">
+                        <h3>System Demonstration</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube-nocookie.com/embed/_q7ahvERAU8"
+                                    title="Demonstration video of the underwater fish detection and tracking system"
+                                    loading="lazy"
+                                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <p>The fish detection and species classification algorithms were designed to be computationally efficient, allowing them to run on the embedded systems of autonomous underwater vehicles with limited processing power. The system achieved over 85% accuracy in species identification even in turbid water conditions and could track multiple targets simultaneously with minimal latency.</p>
+                    
+                    <div class="tech-list">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">CNN Architecture</span>
+                        <span class="tech-tag">Object Detection</span>
+                        <span class="tech-tag">Underwater Robotics</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    
+                    <div class="section-offset">
+                        <h4 class="subheading">Project Gallery</h4>
+                        <div class="grid-two">
+                            <img src="images/projects/caretta_project/object%20detection.jpg" alt="Fish detection in action" class="gallery-image"
+                                 width="1600" height="1113" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail">
+                    <h3>Technical Challenges</h3>
+                    <p>The development of this underwater vision system presented several unique technical challenges:</p>
+                    
+                    <ul class="list-highlight">
+                        <li>Compensating for underwater light scattering and absorption that affects image quality</li>
+                        <li>Developing robust algorithms that could handle varying visibility conditions</li>
+                        <li>Creating efficient models that could run on power-constrained underwater platforms</li>
+                        <li>Building a dataset of underwater fish images for training the detection models</li>
+                        <li>Implementing real-time tracking capabilities that could handle the dynamic underwater environment</li>
+                    </ul>
+                    
+                    <p>The solution incorporated advanced preprocessing techniques to enhance underwater imagery, transfer learning to minimize the required training data, and custom model optimization to ensure performance on embedded hardware platforms.</p>
+                </div>
+
+                <div class="project-detail">
+                    <h3>Applications</h3>
+                    <p>This fish detection and tracking system has been implemented in several applications:</p>
+                    
+                    <ul class="list-highlight">
+                        <li>Marine life monitoring for environmental research</li>
+                        <li>Autonomous underwater surveillance systems</li>
+                        <li>Fishery management and stock assessment</li>
+                        <li>Coral reef ecosystem monitoring</li>
+                        <li>Debris detection and environmental cleanup operations</li>
+                    </ul>
+                    
+                    <p>The system provides valuable data for marine biologists and environmental scientists while enhancing the capabilities of autonomous underwater vehicles for both research and commercial applications.</p>
+                </div>
+                
+                <a href="index.html#projects" class="btn">Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Modal for gallery images -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
+        <button class="close" type="button" aria-label="Close image">&times;</button>
+        <img class="modal-content" id="modalImg" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="js/nav.js" defer></script>
+    <script src="js/project-modal.js" defer></script>
+</body>
+</html>

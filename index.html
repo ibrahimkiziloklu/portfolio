@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Doruk Kızıloklu - Robotics Engineer  </title>
+    <title>Ibrahim Doruk Kızıloklu – Robotics Engineer</title>
     <!-- Added meta description and social sharing tags -->
     <meta name="description" content="Portfolio of Ibrahim Doruk Kızıloklu, a robotics engineer showcasing projects, publications and contact information.">
     <meta property="og:title" content="Ibrahim Doruk Kızıloklu – Robotics Engineer">
@@ -11,13 +11,50 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ibrahimkiziloklu.github.io/">
     <meta property="og:image" content="https://ibrahimkiziloklu.github.io/images/profile/headshot.jpg">
+    <meta property="og:image:alt" content="Ibrahim Doruk Kızıloklu">
+    <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ibrahim Doruk Kızıloklu – Robotics Engineer">
     <meta name="twitter:description" content="Portfolio of Ibrahim Doruk Kızıloklu, featuring robotics projects, publications and a contact form.">
     <meta name="twitter:image" content="https://ibrahimkiziloklu.github.io/images/profile/headshot.jpg">
     <link rel="canonical" href="https://ibrahimkiziloklu.github.io/">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js; connect-src 'self' https://api.emailjs.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.gstatic.com/recaptcha/; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#1f3a5f">
+    <!-- The ld+json block below is inline, so its sha256 is whitelisted in script-src.
+         Re-run the hash (see README) if you ever edit that block. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-cro5NdXgXM8hitRDwnlu3JtbbTD317e2HbtACHI7C+c=' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js; connect-src 'self' https://api.emailjs.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.gstatic.com/recaptcha/; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ibrahim Doruk Kızıloklu",
+  "jobTitle": "Robotics Engineer",
+  "url": "https://ibrahimkiziloklu.github.io/",
+  "image": "https://ibrahimkiziloklu.github.io/images/profile/headshot.jpg",
+  "email": "mailto:ibrahimkiziloklu@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Aalborg",
+    "addressCountry": "DK"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/ibrahimdorukkiziloklu/",
+    "https://github.com/ibrahimkiziloklu",
+    "https://arxiv.org/abs/2307.06300"
+  ],
+  "knowsAbout": [
+    "Robotics",
+    "Mechanical Design",
+    "Control Theory",
+    "Computer Vision",
+    "Autonomous Navigation"
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/main-styles.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer crossorigin="anonymous"></script>
@@ -58,7 +95,9 @@
             
             <div class="container">
                 <div class="hero-content">
-                    <img src="images/profile/headshot.jpg" alt="Ibrahim Doruk Kiziloklu" class="hero-image fade-in" loading="lazy">
+                    <!-- Above the fold: load eagerly so it does not delay the LCP. -->
+                    <img src="images/profile/headshot.jpg" alt="Ibrahim Doruk Kızıloklu" class="hero-image fade-in"
+                         width="180" height="180" fetchpriority="high" decoding="async">
                     <h1 class="fade-in delay-1">Ibrahim Doruk Kızıloklu</h1>
                     <h2 class="fade-in delay-2">Robotics Engineer</h2>
                     <div class="fade-in delay-3">
@@ -82,7 +121,8 @@
                 </div>
                 <div class="about-content">
                     <div class="fade-in">
-                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Working on robotics" class="about-image" loading="lazy">
+                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="The biomimetic underwater robot on display at the SAHA EXPO exhibition in Istanbul" class="about-image"
+                             width="1200" height="1600" loading="lazy" decoding="async">
                     </div>
                     <div class="about-text fade-in delay-1">
                         <h3>Robotics Engineer</h3>
@@ -116,7 +156,8 @@
                 </div>
                 <div class="projects-grid">
                     <div class="project-card fade-in">
-                        <img src="images/projects/5_bar/Picture6.jpg" alt="Five-Bar Parallel Arm Robot" class="project-image" loading="lazy">
+                        <img src="images/projects/5_bar/Picture6.jpg" alt="Five-Bar Parallel Arm Robot" class="project-image"
+                             width="4520" height="1815" loading="lazy" decoding="async">
                         <div class="project-content">
                             <h3>Five-Bar Parallel Arm Robot</h3>
                             <p>Design and development of a precision-focused parallel robot for biomedical applications with optimized kinematics.</p>
@@ -129,7 +170,8 @@
                         </div>
                     </div>
                     <div class="project-card fade-in delay-1">
-                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Underwater Biomimetic Robot" class="project-image" loading="lazy">
+                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Underwater Biomimetic Robot" class="project-image"
+                             width="1937" height="847" loading="lazy" decoding="async">
                         <div class="project-content">
                             <h3>Underwater Biomimetic Robot</h3>
                             <p>Developed a specialized tail mechanism for a biomimetic underwater robot with realistic motion capabilities.</p>
@@ -141,7 +183,8 @@
                         </div>
                     </div>
                     <div class="project-card fade-in delay-2">
-                        <img src="images/projects/exoskeleton_project/MotorActionServerChart.jpg" alt="Exoskeleton for Rehabilitation" class="project-image" loading="lazy">
+                        <img src="images/projects/exoskeleton_project/MotorActionServerChart.jpg" alt="Exoskeleton for Rehabilitation" class="project-image"
+                             width="582" height="682" loading="lazy" decoding="async">
                         <div class="project-content">
                             <h3>Exoskeleton for Rehabilitation</h3>
                             <p>Engineered an exoskeleton prototype for studying hamstring muscle mechanics and enhancing sports injury rehabilitation.</p>
@@ -153,7 +196,8 @@
                         </div>
                     </div>
                     <div class="project-card fade-in delay-3">
-                        <img src="images/projects/caretta_project/object%20detection.jpg" alt="Underwater Fish Detection System" class="project-image" loading="lazy">
+                        <img src="images/projects/caretta_project/object%20detection.jpg" alt="Underwater Fish Detection System" class="project-image"
+                             width="1600" height="1113" loading="lazy" decoding="async">
                         <div class="project-content">
                             <h3>Underwater Fish Detection System</h3>
                             <p>Developed an AI-based vision system for autonomous underwater vehicles to detect, classify, and track various fish species in real-time.</p>
@@ -162,7 +206,7 @@
                                 <span class="project-tag">Deep Learning</span>
                                 <span class="project-tag">OpenCV</span>
                             </div>
-                            <a href="underwater_fish_detection.html" class="btn">View Project</a>
+                            <a href="underwater-fish-detection.html" class="btn">View Project</a>
                         </div>
                     </div>
                 </div> 
@@ -212,7 +256,7 @@
                             <div class="contact-icon" aria-hidden="true">✉</div>
                             <div>
                                 <h3>Email</h3>
-                                <p>ibrahimkiziloklu@gmail.com</p>
+                                <p><a href="mailto:ibrahimkiziloklu@gmail.com" class="contact-link">ibrahimkiziloklu@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item fade-in delay-1">
@@ -280,7 +324,7 @@
                 <li><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><span aria-hidden="true" class="social-text">in</span></a></li>
                 <li><a href="https://github.com/ibrahimkiziloklu" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><span aria-hidden="true" class="social-text">GH</span></a></li>
             </ul>
-            <p>&copy; 2025 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
+            <p>&copy; 2026 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

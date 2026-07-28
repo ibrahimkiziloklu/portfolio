@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Underwater Biomimetic Robot | Ibrahim Doruk Kızıloklu</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <meta name="description" content="A dolphin-inspired underwater robot with a specialised flexible tail mechanism, developed at Cyprus Robotics and showcased at SAHA EXPO Istanbul.">
+    <link rel="canonical" href="https://ibrahimkiziloklu.github.io/underwater-robot-project.html">
+    <meta property="og:title" content="Underwater Biomimetic Robot">
+    <meta property="og:description" content="A specialised tail mechanism for realistic, propeller-free underwater motion.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ibrahimkiziloklu.github.io/underwater-robot-project.html">
+    <meta property="og:image" content="https://ibrahimkiziloklu.github.io/images/projects/dolphin_project/dolp_1.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src https://www.youtube-nocookie.com; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#1f3a5f">
     <link rel="stylesheet" href="css/portfolio-styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <!-- Header -->
     <header>
         <div class="container">
-            <nav>
+            <nav aria-label="Main navigation">
                 <div class="logo"><a href="index.html">IK</a></div>
                 <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
                     <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -28,6 +40,7 @@
         </div>
     </header>
 
+    <main id="main-content">
     <!-- Project Header -->
     <section class="project-header">
         <div class="container">
@@ -40,14 +53,18 @@
     <section>
         <div class="container">
             <div class="project-content">
-                <img src="images/projects/dolphin_project/dolp_1.jpeg" alt="Underwater Biomimetic Robot" class="project-image">
+                <img src="images/projects/dolphin_project/dolp_1.jpeg" alt="Underwater Biomimetic Robot" class="project-image" width="1071" height="1568" fetchpriority="high" decoding="async">
                 
                 <div class="project-detail">
                     <h3>Project Overview</h3>
                     <p>I led the development of this Underwater Biomimetic Robot for a Turkish defense company while at Cyprus Robotics. The design mimics dolphin-like swimming patterns, focusing on a specialized tail mechanism that overcomes traditional propeller limitations in efficiency, noise, and maneuverability.</p>
                     
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/J6A5Eay8ZBc" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube-nocookie.com/embed/J6A5Eay8ZBc"
+                                title="Video of the dolphin-inspired underwater biomimetic robot swimming"
+                                loading="lazy"
+                                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </div>
 
                     
@@ -57,8 +74,8 @@
                     <p>The development process involved several stages of prototyping and testing:</p>
                     
                     <div class="gallery">
-                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Tail mechanism prototype" class="gallery-img">
-                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Exhibition showcase" class="gallery-img">
+                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Tail mechanism prototype" class="gallery-img" width="1937" height="847" decoding="async" loading="lazy">
+                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Exhibition showcase" class="gallery-img" width="1200" height="1600" decoding="async" loading="lazy">
 
                     </div>
                     
@@ -92,6 +109,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Modal for gallery images -->
     <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
         <button class="close" type="button" aria-label="Close image">&times;</button>
@@ -101,7 +120,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
+            <p>&copy; 2026 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
             <a href="index.html" class="back-link">Back to Home</a>
         </div>
     </footer>

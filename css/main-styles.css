@@ -371,6 +371,9 @@ section:nth-child(even) {
 
 .about-image {
     width: 100%;
+    /* Required: the width/height attributes on the <img> reserve layout space and
+       would otherwise be used as the literal rendered height. */
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
@@ -834,5 +837,24 @@ footer {
 
     .section-title h2 {
         font-size: 2rem;
+    }
+}
+/* Respect the OS "reduce motion" setting: keep content visible, drop the movement. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .fade-in {
+        opacity: 1;
+    }
+
+    .hero-image:hover {
+        transform: none;
     }
 }
