@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ibrahimkiziloklu.github.io/sitemap.xml

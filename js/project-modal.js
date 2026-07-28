@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImg');
   const closeBtn = modal ? modal.querySelector('.close') : null;
-  // Support both the flat `.gallery-img` markup and the `.gallery-item > img` grid markup.
-  const galleryImages = document.querySelectorAll('.gallery-img, .gallery-item img');
+  // Support the flat `.gallery-img`/`.gallery-image` markup and the `.gallery-item > img` grid markup.
+  const galleryImages = document.querySelectorAll('.gallery-img, .gallery-image, .gallery-item img');
 
   if (!modal || !modalImg || !closeBtn || galleryImages.length === 0) {
     return;
