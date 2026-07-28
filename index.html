@@ -9,17 +9,19 @@
     <meta property="og:title" content="Ibrahim Doruk Kızıloklu – Robotics Engineer">
     <meta property="og:description" content="Portfolio of Ibrahim Doruk Kızıloklu, featuring robotics projects, publications and a contact form.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ibrahimkiziloklu.github.io/idk.github.io/">
-    <meta property="og:image" content="images/profile/headshot.jpg">
+    <meta property="og:url" content="https://ibrahimkiziloklu.github.io/">
+    <meta property="og:image" content="https://ibrahimkiziloklu.github.io/images/profile/headshot.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ibrahim Doruk Kızıloklu – Robotics Engineer">
     <meta name="twitter:description" content="Portfolio of Ibrahim Doruk Kızıloklu, featuring robotics projects, publications and a contact form.">
-    <meta name="twitter:image" content="images/profile/headshot.jpg">
+    <meta name="twitter:image" content="https://ibrahimkiziloklu.github.io/images/profile/headshot.jpg">
+    <link rel="canonical" href="https://ibrahimkiziloklu.github.io/">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js; connect-src 'self' https://api.emailjs.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.gstatic.com/recaptcha/; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
     <link rel="stylesheet" href="css/main-styles.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer crossorigin="anonymous"></script>
+    <script src="js/nav.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -30,8 +32,13 @@
     <header role="banner">
         <div class="container">
             <nav role="navigation" aria-label="Main navigation">
-                <div class="logo">IK</div>
-                <ul class="nav-links">
+                <div class="logo"><a href="#main-content">IK</a></div>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                </button>
+                <ul class="nav-links" id="primary-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#publications">Publications</a></li>
@@ -258,6 +265,7 @@
                             <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
                         </form>
                     </div>
+                </div>
             </div>
         </section>
     </main>

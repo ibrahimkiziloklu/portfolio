@@ -39,6 +39,24 @@ html {
     padding: 0 20px;
 }
 
+/* Skip link: off-screen until it receives keyboard focus */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 200;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 0 0 8px 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
 /* Fun Dot Pattern Shapes */
 .fun-dots {
     position: absolute;
@@ -180,8 +198,41 @@ nav {
     transition: var(--transition);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
     width: 100%;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mobile menu toggle (hidden on desktop) */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--dark);
+    transition: background-color 0.3s;
+}
+
+.nav-toggle:hover .nav-toggle-bar {
+    background-color: var(--primary);
 }
 
 /* Playful Hero Section */
@@ -743,18 +794,44 @@ footer {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Collapsed by default; js/nav.js adds .is-open */
     .nav-links {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
     }
-    
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .section-title h2 {
         font-size: 2rem;
     }

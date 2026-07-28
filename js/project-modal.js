@@ -2,27 +2,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImg');
   const closeBtn = modal ? modal.querySelector('.close') : null;
-  const galleryImages = document.querySelectorAll('.gallery-img');
+  // Support both the flat `.gallery-img` markup and the `.gallery-item > img` grid markup.
+  const galleryImages = document.querySelectorAll('.gallery-img, .gallery-item img');
 
   if (!modal || !modalImg || !closeBtn || galleryImages.length === 0) {
     return;
   }
 
+  let lastFocused = null;
+
   const showModal = (src, alt) => {
-    modal.style.display = 'block';
+    lastFocused = document.activeElement;
     modalImg.src = src;
     modalImg.alt = alt || '';
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
   };
 
   const hideModal = () => {
-    modal.style.display = 'none';
+    if (!modal.classList.contains('is-open')) {
+      return;
+    }
+    modal.classList.remove('is-open');
     modalImg.removeAttribute('src');
-    modalImg.removeAttribute('alt');
+    modalImg.setAttribute('alt', '');
+    document.body.style.overflow = '';
+    if (lastFocused && typeof lastFocused.focus === 'function') {
+      lastFocused.focus();
+    }
   };
 
   galleryImages.forEach((image) => {
+    // Make each thumbnail reachable and activatable by keyboard.
+    image.setAttribute('tabindex', '0');
+    image.setAttribute('role', 'button');
+
     image.addEventListener('click', () => {
-      showModal(image.src, image.alt);
+      showModal(image.currentSrc || image.src, image.alt);
+    });
+
+    image.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        showModal(image.currentSrc || image.src, image.alt);
+      }
     });
   });
 

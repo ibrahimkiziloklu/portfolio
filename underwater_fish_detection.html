@@ -12,10 +12,14 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">IK</div>
-                <ul class="nav-links">
+                <div class="logo"><a href="index.html">IK</a></div>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                </button>
+                <ul class="nav-links" id="primary-nav">
                     <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#experience">Experience</a></li>
                     <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="index.html#publications">Publications</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
@@ -36,7 +40,7 @@
     <section>
         <div class="container">
             <div class="project-content">
-                <img src="images/projects/fish_detection/main.jpg" alt="Underwater Fish Detection System" class="project-image">
+                <img src="images/projects/caretta_project/caretta.jpg" alt="Caretta autonomous underwater vehicle carrying the fish detection system" class="project-image">
                 
                 <div class="project-detail">
                     <h3>Project Overview</h3>
@@ -66,7 +70,7 @@
                     <div class="section-offset">
                         <h4 class="subheading">Project Gallery</h4>
                         <div class="grid-two">
-                            <img src="images/projects/caretta_project/object detection.jpg" alt="Fish detection in action" class="gallery-image">
+                            <img src="images/projects/caretta_project/object%20detection.jpg" alt="Fish detection in action" class="gallery-image" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -113,5 +117,7 @@
             <a href="index.html" class="back-link">Back to Home</a>
         </div>
     </footer>
+
+    <script src="js/nav.js" defer></script>
 </body>
 </html>
