@@ -33,7 +33,7 @@ Hi there! I'm Ibrahim, a Robotics Engineer.
 - 📧 Email: ibrahimkiziloklu@gmail.com
 - 📍 Location: Aalborg, Denmark
 - 💼 LinkedIn: [ibrahimdorukkiziloklu](https://www.linkedin.com/in/ibrahimdorukkiziloklu/)
-- 🌐 Portfolio: [View My Projects](https://ibrahimkiziloklu.github.io/idk.github.io/)
+- 🌐 Portfolio: [View My Projects](https://ibrahimkiziloklu.github.io/portfolio/)
 
 ### 🔐 Site Security Posture
 
