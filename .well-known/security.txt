@@ -1,5 +1,5 @@
 Contact: mailto:ibrahimkiziloklu@gmail.com
 Expires: 2027-07-28T00:00:00.000Z
-Policy: https://ibrahimkiziloklu.github.io/#contact
+Policy: https://ibrahimkiziloklu.github.io/portfolio/#contact
 Preferred-Languages: en
-Canonical: https://ibrahimkiziloklu.github.io/.well-known/security.txt
+Canonical: https://ibrahimkiziloklu.github.io/portfolio/.well-known/security.txt
