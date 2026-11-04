@@ -3,412 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Doruk Kızıloklu | Robotics Engineer &amp; Mechanical Design</title>
-    <!-- Added meta description and social sharing tags -->
-    <meta name="description" content="Robotics engineering portfolio of Ibrahim Doruk Kızıloklu, focused on mechanical design, prototyping, integration and validation.">
-    <meta property="og:title" content="Ibrahim Doruk Kızıloklu | Mechanical Design &amp; Robotics">
-    <meta property="og:description" content="Mechanical design, fabrication and testing for agricultural, rehabilitation and underwater robotics.">
+    <meta name="description" content="A visual timeline of Ibrahim Doruk Kızıloklu's mechanical engineering and robotics projects.">
+    <meta property="og:title" content="Robotics Projects | Ibrahim Doruk Kızıloklu">
+    <meta property="og:description" content="A visual timeline of robotic mechanisms, prototypes and field systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ibrahimkiziloklu.github.io/portfolio/">
-    <meta property="og:image" content="https://ibrahimkiziloklu.github.io/portfolio/images/profile/headshot.jpg">
+    <meta property="og:image" content="https://ibrahimkiziloklu.github.io/portfolio/images/projects/agricultural_weeding_robot/botany-field-scouting.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ibrahim Doruk Kızıloklu | Mechanical Design &amp; Robotics">
-    <meta name="twitter:description" content="Mechanical design, fabrication and testing for agricultural, rehabilitation and underwater robotics.">
-    <meta name="twitter:image" content="https://ibrahimkiziloklu.github.io/portfolio/images/profile/headshot.jpg">
+    <meta name="twitter:title" content="Robotics Projects | Ibrahim Doruk Kızıloklu">
+    <meta name="twitter:description" content="A visual timeline of robotic mechanisms, prototypes and field systems.">
+    <meta name="twitter:image" content="https://ibrahimkiziloklu.github.io/portfolio/images/projects/agricultural_weeding_robot/botany-field-scouting.jpg">
     <link rel="canonical" href="https://ibrahimkiziloklu.github.io/portfolio/">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js; connect-src 'self' https://api.emailjs.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.gstatic.com/recaptcha/; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <title>Robotics Projects | Ibrahim Doruk Kızıloklu</title>
     <link rel="stylesheet" href="css/main-styles.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer crossorigin="anonymous"></script>
-    <script src="js/nav.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/projects-slideshow.js" defer></script>
 </head>
 <body>
-    <!-- Skip navigation link for accessibility -->
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#project-timeline">Skip to project timeline</a>
 
-    <!-- Header -->
-    <header role="banner">
-        <div class="container">
-            <nav role="navigation" aria-label="Main navigation">
-                <div class="logo"><a href="#main-content">IK</a></div>
-                <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
-                    <span class="nav-toggle-bar" aria-hidden="true"></span>
-                    <span class="nav-toggle-bar" aria-hidden="true"></span>
-                    <span class="nav-toggle-bar" aria-hidden="true"></span>
-                </button>
-                <ul class="nav-links" id="primary-nav">
-                    <li><a href="#about">Profile</a></li>
-                    <li><a href="#capabilities">Capabilities</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="brand" href="#project-timeline" aria-label="Ibrahim Doruk Kızıloklu, project portfolio">
+                <span class="brand-mark" aria-hidden="true">IK</span>
+                <span class="brand-name">IBRAHIM DORUK KIZILOKLU <span>MECHANICAL ENGINEERING · ROBOTICS</span></span>
+            </a>
+            <a class="header-link" href="#project-timeline">Explore projects <span aria-hidden="true">↓</span></a>
         </div>
     </header>
 
-    <!-- Main content wrapper -->
     <main id="main-content">
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-copy fade-in">
-                        <p class="hero-kicker"><span>Robotics Engineer</span><span>Mechanical Design &amp; Integration</span></p>
-                        <h1>Ibrahim Doruk Kızıloklu</h1>
-                        <h2>Robotic mechanisms from CAD to working hardware.</h2>
-                        <p class="hero-intro">I design, build and validate mechanisms for agricultural, rehabilitation and underwater robots, from component selection through prototyping, integration and testing.</p>
-                        <div class="hero-actions">
-                            <a href="#projects" class="btn">Explore projects</a>
-                            <a href="#experience" class="btn btn-secondary">Career timeline</a>
-                        </div>
-                        <ul class="hero-focus" aria-label="Engineering focus">
-                            <li>Mechanism design</li>
-                            <li>Prototype &amp; fabrication</li>
-                            <li>Testing &amp; integration</li>
-                        </ul>
-                    </div>
-                    <div class="hero-visual fade-in delay-1">
-                        <div class="hero-photo-frame">
-                            <img src="images/profile/headshot.jpg" alt="Ibrahim Doruk Kızıloklu" class="hero-image" fetchpriority="high" decoding="async">
-                            <span class="hero-photo-index" aria-hidden="true">ENGINEERING PORTFOLIO / 2026</span>
-                        </div>
-                        <div class="hero-visual-footer">
-                            <div><span>Based in</span><strong>Aalborg, Denmark</strong></div>
-                            <div><span>Mobility</span><strong>Open to relocation</strong></div>
-                        </div>
-                    </div>
-                </div>
+        <section class="intro" aria-labelledby="page-title">
+            <div class="intro-copy">
+                <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> A project portfolio</p>
+                <h1 id="page-title">From mechanisms<br>to working robots.</h1>
+                <p class="intro-summary">A visual timeline of the robotic systems I have designed, built, integrated and tested.</p>
+            </div>
+            <div class="intro-note" aria-label="Portfolio overview">
+                <span class="note-index" id="intro-counter">01 <i aria-hidden="true">/</i> 05</span>
+                <span>AGRICULTURE<br>REHABILITATION<br>UNDERWATER ROBOTICS</span>
             </div>
         </section>
 
-        <section id="about" class="profile-section">
-            <div class="container">
-                <div class="section-title">
-                    <span class="section-kicker">01 / Profile</span>
-                    <h2>Mechanical engineering with a hands-on robotics focus</h2>
-                    <p>From mechanism design and fabrication to integration and hardware validation.</p>
+        <section class="showcase" id="project-timeline" aria-labelledby="timeline-heading">
+            <div class="showcase-heading">
+                <div>
+                    <p class="section-label">Selected engineering work</p>
+                    <h2 id="timeline-heading">Project timeline</h2>
                 </div>
-                <div class="about-content">
-                    <figure class="about-figure fade-in">
-                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Robotic prototype displayed at an engineering exhibition" class="about-image" loading="lazy">
-                        <figcaption>Robotics work presented at an engineering exhibition</figcaption>
+                <p class="timeline-instruction">Choose a project to explore</p>
+            </div>
+
+            <div class="timeline" role="tablist" aria-label="Projects in timeline order">
+                <button class="timeline-stop is-active" type="button" role="tab" id="tab-botany" aria-controls="project-botany" aria-selected="true" tabindex="0" data-slide="0">
+                    <span class="timeline-date">2025 — NOW</span><span class="timeline-title">Agricultural robot</span>
+                </button>
+                <button class="timeline-stop" type="button" role="tab" id="tab-five-bar" aria-controls="project-five-bar" aria-selected="false" tabindex="-1" data-slide="1">
+                    <span class="timeline-date">2024 — 2025</span><span class="timeline-title">Five-bar robot</span>
+                </button>
+                <button class="timeline-stop" type="button" role="tab" id="tab-exoskeleton" aria-controls="project-exoskeleton" aria-selected="false" tabindex="-1" data-slide="2">
+                    <span class="timeline-date">MSc PERIOD*</span><span class="timeline-title">Rehabilitation exoskeleton</span>
+                </button>
+                <button class="timeline-stop" type="button" role="tab" id="tab-underwater" aria-controls="project-underwater" aria-selected="false" tabindex="-1" data-slide="3">
+                    <span class="timeline-date">2021 — 2022</span><span class="timeline-title">Biomimetic robot</span>
+                </button>
+                <button class="timeline-stop" type="button" role="tab" id="tab-fish-detection" aria-controls="project-fish-detection" aria-selected="false" tabindex="-1" data-slide="4">
+                    <span class="timeline-date">2021 — 2022</span><span class="timeline-title">Fish detection</span>
+                </button>
+            </div>
+
+            <div class="slide-stage" aria-live="off">
+                <article class="project-slide is-active" id="project-botany" role="tabpanel" aria-labelledby="tab-botany" tabindex="0" data-project-id="botany">
+                    <figure class="slide-visual">
+                        <img src="images/projects/agricultural_weeding_robot/botany-field-scouting.jpg" alt="BOTany team scouting a field beside the agricultural robot" fetchpriority="high">
+                        <figcaption><span class="image-mark" aria-hidden="true">B</span><span>BOTany <i aria-hidden="true">/</i> field robotics</span></figcaption>
                     </figure>
-                    <div class="about-text fade-in delay-1">
-                        <h3>From CAD to hardware validation</h3>
-                        <p>I am a robotics engineer with a mechanical engineering background. My work spans agricultural toolheads, parallel mechanisms for rehabilitation, and underwater robotic systems.</p>
-                        <p>I work across CAD, component selection, drawings, workshop fabrication, mechatronics integration and test. I enjoy solving the mechanical details that make a prototype reliable and practical to use.</p>
-                        <div class="profile-mini-facts">
-                            <div><span>Languages</span><strong>English &amp; Turkish fluent<br>Danish beginner</strong></div>
-                            <div><span>Engineering tools</span><strong>SolidWorks, Onshape, GD&amp;T, ROS 2</strong></div>
+                    <div class="slide-copy">
+                        <p class="slide-kicker"><span>01</span> FIELD ROBOTICS <span class="period">2025 — PRESENT</span></p>
+                        <h3>Agricultural<br>weeding robot</h3>
+                        <p class="role-line">Co-founder · Lead mechanical design engineer</p>
+                        <p class="slide-description">Designing field-ready hardware for precise weed removal, from toolhead mechanisms to quick-change interfaces and robot integration.</p>
+                        <ul class="project-highlights" aria-label="My contribution">
+                            <li><strong>2-DOF</strong><span>pan-and-tilt toolheads</span></li>
+                            <li><strong>&lt; 2 min</strong><span>implement changeover</span></li>
+                            <li><strong>ROS 2</strong><span>CAN bus and encoder integration</span></li>
+                        </ul>
+                        <div class="slide-footer">
+                            <a class="case-link" href="agricultural-weeding-robot.html">Open project <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="agricultural-weeding-robot.html#robot-demo">Watch field demo <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
+                </article>
+
+                <article class="project-slide" id="project-five-bar" role="tabpanel" aria-labelledby="tab-five-bar" tabindex="0" data-project-id="five-bar" hidden>
+                    <figure class="slide-visual">
+                        <img src="images/projects/5_bar/Picture6.jpg" alt="Five-bar parallel arm robot developed for rehabilitation research" loading="lazy">
+                        <figcaption><span class="image-mark" aria-hidden="true">05</span><span>Parallel mechanism <i aria-hidden="true">/</i> rehabilitation</span></figcaption>
+                    </figure>
+                    <div class="slide-copy">
+                        <p class="slide-kicker"><span>02</span> REHABILITATION ROBOTICS <span class="period">2024 — 2025</span></p>
+                        <h3>Five-bar parallel<br>arm robot</h3>
+                        <p class="role-line">Robotics Engineer Research Assistant · Aalborg University</p>
+                        <p class="slide-description">Designed and tested a parallel mechanism for rehabilitation research, with a focus on positioning accuracy and controlled movement.</p>
+                        <ul class="project-highlights" aria-label="Project outcome">
+                            <li><strong>±0.5 mm</strong><span>verified positioning accuracy</span></li>
+                            <li><strong>5-bar</strong><span>parallel linkage architecture</span></li>
+                            <li><strong>Research</strong><span>biomechanics and rehabilitation</span></li>
+                        </ul>
+                        <div class="slide-footer"><a class="case-link" href="five-bar-project.html">Open project <span aria-hidden="true">↗</span></a></div>
+                    </div>
+                </article>
+
+                <article class="project-slide" id="project-exoskeleton" role="tabpanel" aria-labelledby="tab-exoskeleton" tabindex="0" data-project-id="exoskeleton" hidden>
+                    <figure class="slide-visual">
+                        <img src="images/projects/exoskeleton_project/Exoskeleton_Solidworks.jpg" alt="CAD design of a lower-limb rehabilitation exoskeleton" loading="lazy">
+                        <figcaption><span class="image-mark" aria-hidden="true">XR</span><span>Lower-limb biomechanics <i aria-hidden="true">/</i> CAD</span></figcaption>
+                    </figure>
+                    <div class="slide-copy">
+                        <p class="slide-kicker"><span>03</span> REHABILITATION ROBOTICS <span class="period">MSc PERIOD*</span></p>
+                        <h3>Rehabilitation<br>exoskeleton</h3>
+                        <p class="role-line">Center for Rehabilitation Robotics · Aalborg University</p>
+                        <p class="slide-description">Contributed to a lower-limb exoskeleton for studying hamstring mechanics, combining mechanical revisions with ROS 2 control and exercise patterns.</p>
+                        <ul class="project-highlights" aria-label="My contribution">
+                            <li><strong>CAD</strong><span>prototype design revisions</span></li>
+                            <li><strong>ROS 2</strong><span>modular control and data acquisition</span></li>
+                            <li><strong>Exercise</strong><span>movement patterns for rehabilitation research</span></li>
+                        </ul>
+                        <div class="slide-footer"><a class="case-link" href="exoskeleton-project.html">Open project <span aria-hidden="true">↗</span></a><a class="text-link" href="exoskeleton-gallery.html">View image gallery <span aria-hidden="true">↗</span></a></div>
+                    </div>
+                </article>
+
+                <article class="project-slide" id="project-underwater" role="tabpanel" aria-labelledby="tab-underwater" tabindex="0" data-project-id="underwater-robot" hidden>
+                    <figure class="slide-visual">
+                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Prototype of the biomimetic underwater robot tail" loading="lazy">
+                        <figcaption><span class="image-mark" aria-hidden="true">UW</span><span>Underwater robotics <i aria-hidden="true">/</i> prototype</span></figcaption>
+                    </figure>
+                    <div class="slide-copy">
+                        <p class="slide-kicker"><span>04</span> MARINE ROBOTICS <span class="period">2021 — 2022</span></p>
+                        <h3>Biomimetic<br>underwater robot</h3>
+                        <p class="role-line">Mechanical design · Cyprus Robotics</p>
+                        <p class="slide-description">Developed a dolphin-inspired tail mechanism and underwater hardware, then worked through prototyping and environmental testing.</p>
+                        <ul class="project-highlights" aria-label="My contribution">
+                            <li><strong>Tail</strong><span>mechanism development</span></li>
+                            <li><strong>Sealing</strong><span>marine housings and interfaces</span></li>
+                            <li><strong>Testing</strong><span>pressure and salinity conditions</span></li>
+                        </ul>
+                        <div class="slide-footer"><a class="case-link" href="underwater-robot-project.html">Open project <span aria-hidden="true">↗</span></a></div>
+                    </div>
+                </article>
+
+                <article class="project-slide" id="project-fish-detection" role="tabpanel" aria-labelledby="tab-fish-detection" tabindex="0" data-project-id="fish-detection" hidden>
+                    <figure class="slide-visual">
+                        <img src="images/projects/caretta_project/object%20detection.jpg" alt="Underwater fish detection visualization" loading="lazy">
+                        <figcaption><span class="image-mark" aria-hidden="true">AI</span><span>Orca · Caretta <i aria-hidden="true">/</i> underwater vision</span></figcaption>
+                    </figure>
+                    <div class="slide-copy">
+                        <p class="slide-kicker"><span>05</span> UNDERWATER VISION <span class="period">2021 — 2022</span></p>
+                        <h3>Fish detection<br>and tracking</h3>
+                        <p class="role-line">Development contribution · Cyprus Robotics, with Orca–Caretta</p>
+                        <p class="slide-description">Helped develop an AI-based vision system for autonomous underwater vehicles to detect, classify and track fish in challenging water conditions.</p>
+                        <ul class="project-highlights" aria-label="Project focus">
+                            <li><strong>Detect</strong><span>find fish in underwater imagery</span></li>
+                            <li><strong>Classify</strong><span>identify observed species</span></li>
+                            <li><strong>Track</strong><span>follow multiple moving targets</span></li>
+                        </ul>
+                        <div class="slide-footer"><a class="case-link" href="underwater_fish_detection.html">Open project <span aria-hidden="true">↗</span></a></div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="showcase-controls">
+                <div class="control-pair">
+                    <button class="arrow-button" type="button" id="previous-project" aria-label="Previous project">←</button>
+                    <button class="arrow-button" type="button" id="next-project" aria-label="Next project">→</button>
+                    <span class="control-count" id="project-counter" aria-live="polite">01 <span>/</span> 05</span>
                 </div>
-                <div class="cv-download fade-in delay-2">
-                    <a href="images/assets/Idk_Cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
+                <div class="share-actions">
+                    <span class="share-status" id="share-status" aria-live="polite"></span>
+                    <button class="share-button" type="button" id="copy-project-link">Copy project link <span aria-hidden="true">⤴</span></button>
                 </div>
             </div>
-        </section>
-
-        <section id="capabilities" class="capabilities-section">
-            <div class="container">
-                <div class="section-title">
-                    <span class="section-kicker">02 / Engineering workflow</span>
-                    <h2>How I take a robot from design to test</h2>
-                    <p>A practical toolkit for mechanisms, prototypes, integration and validation.</p>
-                </div>
-                <div class="capability-grid">
-                    <article class="capability-card fade-in">
-                        <span class="capability-number">01</span>
-                        <h3>Design mechanisms</h3>
-                        <p>Develop linkages, toolheads, housings and assemblies around the task they need to perform.</p>
-                        <div class="capability-tags"><span>SolidWorks</span><span>Onshape</span><span>GD&amp;T</span><span>Tolerance analysis</span></div>
-                    </article>
-                    <article class="capability-card fade-in delay-1">
-                        <span class="capability-number">02</span>
-                        <h3>Build for fabrication</h3>
-                        <p>Move from CAD to parts with clear drawings, practical tolerances and coordinated production.</p>
-                        <div class="capability-tags"><span>DFM</span><span>BOMs</span><span>Rapid prototyping</span><span>Workshop fabrication</span></div>
-                    </article>
-                    <article class="capability-card fade-in delay-2">
-                        <span class="capability-number">03</span>
-                        <h3>Integrate hardware</h3>
-                        <p>Bring mechanical assemblies together with motors, feedback, electronics and robot software.</p>
-                        <div class="capability-tags"><span>BLDC motors</span><span>Encoders</span><span>CAN bus</span><span>ROS 2</span></div>
-                    </article>
-                    <article class="capability-card fade-in delay-3">
-                        <span class="capability-number">04</span>
-                        <h3>Test and validate</h3>
-                        <p>Check accuracy, stiffness, repeatability and environmental protection under real conditions.</p>
-                        <div class="capability-tags"><span>Stress testing</span><span>Position verification</span><span>Sealing</span><span>Performance testing</span></div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <div class="section-title">
-                    <span class="section-kicker">03 / Selected work</span>
-                    <h2>Projects</h2>
-                    <p>Robotic systems I have designed, built, integrated or tested.</p>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card fade-in">
-                        <img src="images/projects/5_bar/Picture6.jpg" alt="Five-Bar Parallel Arm Robot" class="project-image" loading="lazy">
-                        <div class="project-content">
-                            <h3>Five-Bar Parallel Arm Robot</h3>
-                            <p>I designed and tested a five-bar robot for rehabilitation research, verifying positioning accuracy to &plusmn;0.5 mm.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Mechanical Design</span>
-                                <span class="project-tag">Non Linear Control Systems</span>
-                                <span class="project-tag">Kinematics</span>
-                            </div>
-                            <a href="five-bar-project.html" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-1">
-                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Underwater Biomimetic Robot" class="project-image" loading="lazy">
-                        <div class="project-content">
-                            <h3>Underwater Biomimetic Robot</h3>
-                            <p>I developed underwater robot mechanisms and housings, then tested sealing and durability in demanding conditions.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Biomimetic Design</span>
-                                <span class="project-tag">Motion Analysis</span>
-                            </div>
-                            <a href="underwater-robot-project.html" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-2">
-                        <img src="images/projects/exoskeleton_project/MotorActionServerChart.jpg" alt="Exoskeleton for Rehabilitation" class="project-image" loading="lazy">
-                        <div class="project-content">
-                            <h3>Exoskeleton for Rehabilitation</h3>
-                            <p>Engineered an exoskeleton prototype for studying hamstring muscle mechanics and enhancing sports injury rehabilitation.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Medical Robotics</span>
-                                <span class="project-tag">ROS2</span>
-                            </div>
-                            <a href="exoskeleton-project.html" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-3">
-                        <img src="images/projects/caretta_project/object%20detection.jpg" alt="Underwater Fish Detection System" class="project-image" loading="lazy">
-                        <div class="project-content">
-                            <h3>Underwater Fish Detection System</h3>
-                            <p>Developed an AI-based vision system for autonomous underwater vehicles to detect, classify, and track various fish species in real-time.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Computer Vision</span>
-                                <span class="project-tag">Deep Learning</span>
-                                <span class="project-tag">OpenCV</span>
-                            </div>
-                            <a href="underwater_fish_detection.html" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in">
-                        <img src="images/projects/agricultural_weeding_robot/demo-poster.svg" alt="Illustrated field scene for the agricultural weeding robot project" class="project-image" loading="lazy">
-                        <div class="project-content">
-                            <h3>Agricultural Weeding Robot</h3>
-                            <p>I designed 2-DOF weeding toolheads and a quick-release mounting system for agricultural crop beds.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Agricultural Robotics</span>
-                                <span class="project-tag">Mechanical Design</span>
-                            </div>
-                            <a href="agricultural-weeding-robot.html" class="btn">View Project</a>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </section>
-
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <div class="section-title">
-                    <span class="section-kicker">04 / Career timeline</span>
-                    <h2>Engineering experience</h2>
-                    <p>Mechanical design, robotics research and field-oriented system development.</p>
-                </div>
-
-                <div class="experience-timeline">
-                    <article class="timeline-item fade-in">
-                        <div class="timeline-date"><time datetime="2025-11">Nov 2025</time><span>Present</span></div>
-                        <div class="timeline-content">
-                            <p class="timeline-organization">BOTany <span>Aalborg, Denmark</span></p>
-                            <h3>Co-Founder &amp; Lead Mechanical Design Engineer</h3>
-                            <ul>
-                                <li>Designed and fabricated 2-DOF pan-and-tilt weeding toolheads with V-shaped catching mechanisms.</li>
-                                <li>Created quick-release rack-rail clamps for implement swaps in under two minutes, with positional accuracy and dust and moisture sealing.</li>
-                                <li>Prepared GD&amp;T drawings and tolerance specifications; worked across workshop fabrication, BLDC motors, encoders, CAN bus and ROS 2 integration.</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline-item fade-in">
-                        <div class="timeline-date"><time datetime="2024-03">Mar 2024</time><span>Feb 2025</span></div>
-                        <div class="timeline-content">
-                            <p class="timeline-organization">Aalborg University <span>Aalborg, Denmark</span></p>
-                            <h3>Robotics Engineer Research Assistant</h3>
-                            <ul>
-                                <li>Designed and modelled a five-bar parallel manipulator for rehabilitation research.</li>
-                                <li>Developed compliance and stress tests, verifying positioning accuracy to &plusmn;0.5 mm.</li>
-                                <li>Mentored a six-member undergraduate team and co-authored a peer-reviewed Springer paper.</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline-item fade-in">
-                        <div class="timeline-date"><time datetime="2021-02">Feb 2021</time><span>Jun 2022</span></div>
-                        <div class="timeline-content">
-                            <p class="timeline-organization">Cyprus Robotics / Ara Robotics <span>Famagusta, Cyprus</span></p>
-                            <h3>Mechanical Design Engineer</h3>
-                            <ul>
-                                <li>Researched a biomimetic tail mechanism and adapted robotic housings for underwater operation.</li>
-                                <li>Selected marine-grade materials and seals for submerged hardware.</li>
-                                <li>Validated prototypes with pressure, salinity and lifecycle durability tests.</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="education-block">
-                    <div class="education-heading">
-                        <span class="section-kicker">05 / Education</span>
-                        <h2>Education &amp; additional experience</h2>
-                    </div>
-                    <div class="education-grid">
-                        <article class="education-card">
-                            <p class="education-date">2023 – 2026</p>
-                            <h3>Robotics MSc</h3>
-                            <p>Aalborg University, Denmark</p>
-                            <span>Non-linear control and multi-body systems</span>
-                        </article>
-                        <article class="education-card">
-                            <p class="education-date">2015 – 2020</p>
-                            <h3>Mechanical Engineering BSc</h3>
-                            <p>Dokuz Eylül University, Turkey</p>
-                            <span>Thesis: design and control of two-axis solar tracking mechanisms</span>
-                        </article>
-                    </div>
-                    <div class="experience-extras">
-                        <article>
-                            <span>Team leadership</span>
-                            <p>Led a five-person cross-disciplinary robotics team; delivered three prototypes over a nine-month competition cycle.</p>
-                        </article>
-                        <article>
-                            <span>Recognition</span>
-                            <p>EU Graduate Studies Scholarship recipient; Huawei DIGIX 2020 regional third place.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications" class="publications-section">
-            <div class="container">
-                <div class="section-title">
-                    <span class="section-kicker">06 / Research</span>
-                    <h2>Publications</h2>
-                    <p>Peer-reviewed research and technical work.</p>
-                </div>
-                <div class="publication-list">
-                    <div class="publication-item fade-in">
-                        <h3>Design and Stiffness Modeling of a Novel Planar Parallel Robot with Variable Stiffness Actuators</h3>
-                        <div class="publication-meta">Springer/Mechanism Design for Robotics (2024)</div>
-                        <p>Co-authored research detailing the design of variable stiffness actuators for planar robots, focusing on innovative mechanism design and stiffness modeling approaches.</p>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-67383-2_30" class="publication-link" target="_blank" rel="noopener noreferrer">Read Publication</a>
-                    </div>
-                    <div class="publication-item fade-in delay-1">
-                        <h3>A Comparative Analysis Between the Additive and the Multiplicative Extended Kalman Filter</h3>
-                        <div class="publication-meta">arXiv:2307.06300</div>
-                        <p>This project focuses on a practical comparison between the MEKF and the Additive Extended Kalman Filter in satellite attitude estimation.</p>
-                        <a href="https://arxiv.org/abs/2307.06300" class="publication-link" target="_blank" rel="noopener noreferrer">Read Publication</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-title">
-                    <span class="section-kicker">07 / Contact</span>
-                    <h2>Contact</h2>
-                    <p>Get in touch about robotics, mechanical design or collaboration.</p>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-item fade-in">
-                            <div class="contact-icon" aria-hidden="true">✉</div>
-                            <div>
-                                <h3>Email</h3>
-                                <p><a href="mailto:ibrahimkiziloklu@gmail.com" class="contact-link">ibrahimkiziloklu@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item fade-in delay-1">
-                            <div class="contact-icon" aria-hidden="true">📍</div>
-                            <div>
-                                <h3>Location</h3>
-                                <p>Aalborg, Denmark</p>
-                            </div>
-                        </div>
-                        <div class="contact-item fade-in delay-2">
-                            <div class="contact-icon" aria-hidden="true">in</div>
-                            <div>
-                                <h3>LinkedIn</h3>
-                                <p><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" rel="noopener noreferrer" class="contact-link">ibrahimdorukkiziloklu</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form fade-in delay-3">
-                        <form id="contactForm" novalidate>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name">
-                                <span class="error-text" id="nameError"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email">
-                                <span class="error-text" id="emailError"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="Email Subject" required autocomplete="off">
-                                <span class="error-text" id="subjectError"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Your Message" required autocomplete="off"></textarea>
-                                <span class="error-text" id="messageError"></span>
-                            </div>
-                            
-                            <!-- reCAPTCHA element -->
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6LcNqPkqAAAAAMhQQuzMjDfkOSG_B5ea_PYfWlmA"></div>
-                                <span class="error-text" id="recaptchaError"></span>
-                            </div>
-                            
-                            <button type="submit" class="btn" id="submitBtn">Send Message</button>
-                            
-                            <!-- Status message container with aria-live for accessibility -->
-                            <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <p class="timeline-note">*The exoskeleton was completed during my MSc period; its exact project dates were not listed in my CV. Other dates follow the related role periods.</p>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer role="contentinfo">
-        <!-- Playful decorative element -->
-        <div class="footer-bubble"></div>
-        
-        <div class="container">
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><span aria-hidden="true" class="social-text">in</span></a></li>
-                <li><a href="https://github.com/ibrahimkiziloklu" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><span aria-hidden="true" class="social-text">GH</span></a></li>
-            </ul>
-            <p>&copy; 2026 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
-        </div>
+    <footer class="site-footer">
+        <span>IBRAHIM DORUK KIZILOKLU</span>
+        <span>MECHANICAL ENGINEERING <i aria-hidden="true">·</i> ROBOTICS</span>
     </footer>
 </body>
 </html>
